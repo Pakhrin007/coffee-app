@@ -1,6 +1,7 @@
 import 'dart:ffi';
 
 import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'package:coffee/newpages/list.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
@@ -26,7 +27,7 @@ class _SplashscreenState extends State<Splashscreen> {
           )
         ],
       ),
-      nextScreen: ListView(),
+      nextScreen: const Arya(),
       splashIconSize: double.infinity,
       backgroundColor: Colors.white,
     );
