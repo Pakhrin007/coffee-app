@@ -1,3 +1,4 @@
+import 'package:coffee/newpages/splashscreen.dart';
 import 'package:coffee/screen/welcome.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(scaffoldBackgroundColor: Colors.black),
-      home: const Welcome(),
+      home: const Splashscreen(),
     );
   }
 }
