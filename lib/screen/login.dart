@@ -45,9 +45,11 @@ class _LoginState extends State<Login> {
                 width: width * .8,
                 child: TextFormField(
                   decoration: const InputDecoration(
-                    // labelText: "Enter your email",
+                    hintText: "Enter your email",
                     labelStyle: TextStyle(fontSize: 16),
                     border: OutlineInputBorder(),
+                    contentPadding: EdgeInsets.symmetric(
+                        vertical: 10, horizontal: 12), // Adjust padding here
                   ),
                   validator: (value) =>
                       value!.isEmpty ? "Please enter your E-Mail" : null,
@@ -68,9 +70,11 @@ class _LoginState extends State<Login> {
                 child: TextFormField(
                   obscureText: !isPasswordVisible,
                   decoration: InputDecoration(
-                      // labelText: "Enter your password",
+                      hintText: "Enter your password",
                       labelStyle: const TextStyle(fontSize: 16),
                       border: const OutlineInputBorder(),
+                      contentPadding:
+                          EdgeInsets.symmetric(vertical: 10, horizontal: 12),
                       suffixIcon: IconButton(
                           onPressed: () {
                             setState(() {

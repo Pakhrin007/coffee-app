@@ -28,27 +28,7 @@ class _DashboardState extends State<Dashboard> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[200], // Set the background color
-      appBar: AppBar(
-        leading: Padding(
-          padding: const EdgeInsets.only(left: 10),
-          child: Image.asset('assets/splash/logo.png'),
-        ),
-        leadingWidth: 86,
-        title: Text(
-          "Meditation",
-          style: TextStyle(fontSize: 20, fontFamily: 'poppins-medium'),
-        ),
-        centerTitle: true,
-        actions: [
-          IconButton(
-            onPressed: () {},
-            icon: Padding(
-              padding: const EdgeInsets.only(right: 15),
-              child: Icon(Icons.person),
-            ),
-          ),
-        ],
-      ),
+
       body: _pages[_currentIndex], // Display the selected page
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,

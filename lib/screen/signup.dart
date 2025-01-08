@@ -47,9 +47,11 @@ class _SignupState extends State<Signup> {
                 width: width * .8,
                 child: TextFormField(
                   decoration: const InputDecoration(
-                    // labelText: "Enter your email",
+                    hintText: "Enter your email",
                     labelStyle: TextStyle(fontSize: 16),
                     border: OutlineInputBorder(),
+                    contentPadding:
+                        EdgeInsets.symmetric(vertical: 10, horizontal: 12),
                   ),
                   validator: (value) =>
                       value!.isEmpty ? "Please enter your E-Mail" : null,
@@ -70,9 +72,11 @@ class _SignupState extends State<Signup> {
                 child: TextFormField(
                   obscureText: !isPasswordVisible, // Hide password input
                   decoration: InputDecoration(
-                      // labelText: "Enter your password",
+                      hintText: "Enter your password",
                       labelStyle: TextStyle(fontSize: 16),
                       border: OutlineInputBorder(),
+                      contentPadding:
+                          EdgeInsets.symmetric(vertical: 10, horizontal: 12),
                       suffixIcon: IconButton(
                           onPressed: () {
                             setState(() {
@@ -101,9 +105,11 @@ class _SignupState extends State<Signup> {
                 child: TextFormField(
                   obscureText: true, // Hide password input
                   decoration: InputDecoration(
-                      // labelText: "Enter your confirm password",
+                      hintText: "Enter your confirm password",
                       labelStyle: TextStyle(fontSize: 16),
                       border: OutlineInputBorder(),
+                      contentPadding:
+                          EdgeInsets.symmetric(vertical: 12, horizontal: 12),
                       suffixIcon: IconButton(
                           onPressed: () {
                             setState(() {
