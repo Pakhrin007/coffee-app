@@ -30,6 +30,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  audioplayers: ^6.1.0
   
     
 
@@ -68,6 +69,10 @@ flutter:
   assets:
     - assets/splash/logo.png
     - assets/icon/google.png
+    - assets/meditate/medi.png
+    - assets/meditate/medi2.png
+    - assets/meditate/medi3.png
+    - assets/audio/
  
     
 
