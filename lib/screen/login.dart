@@ -1,3 +1,4 @@
+import 'package:coffee/dashboard/dashboard.dart';
 import 'package:coffee/screen/forgot.dart';
 import 'package:coffee/screen/signup.dart';
 import 'package:flutter/material.dart';
@@ -98,24 +99,30 @@ class _LoginState extends State<Login> {
                         MaterialPageRoute(
                             builder: (context) => const Forgot()));
                   },
-                  child: const Text("Forgot password")),
+                  child: const Text("Forgot password ?")),
               const SizedBox(height: 18),
 
               // Sign Up Button
-              Container(
-                height: height * 0.074,
-                width: width * .8,
-                decoration: BoxDecoration(
-                  color: Color.fromRGBO(1, 139, 250, 1),
-                  borderRadius: BorderRadius.circular(5),
-                ),
-                child: const Center(
-                  child: Text(
-                    "Login",
-                    style: TextStyle(
-                      fontSize: 24,
-                      color: Colors.white,
-                      fontWeight: FontWeight.w600,
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => Dashboard()));
+                },
+                child: Container(
+                  height: height * 0.074,
+                  width: width * .8,
+                  decoration: BoxDecoration(
+                    color: Color.fromRGBO(1, 139, 250, 1),
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  child: const Center(
+                    child: Text(
+                      "Login",
+                      style: TextStyle(
+                        fontSize: 24,
+                        color: Colors.white,
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                   ),
                 ),

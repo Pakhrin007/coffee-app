@@ -1,7 +1,7 @@
 import 'package:coffee/dashboard/dashboard.dart';
 import 'package:coffee/screen/login.dart';
-import 'package:coffee/screen/signup.dart';
 import 'package:coffee/splashscreen/splashscreen.dart';
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(scaffoldBackgroundColor: Colors.black),
-      home: const Dashboard(),
+      home: const Splashscreen(),
     );
   }
 }

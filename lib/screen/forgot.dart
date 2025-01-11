@@ -46,7 +46,7 @@ class _ForgotState extends State<Forgot> {
                 width: width * .8,
                 child: TextFormField(
                   decoration: const InputDecoration(
-                    // labelText: "Enter your email",
+                    hintText: "Enter your email",
                     labelStyle: TextStyle(fontSize: 16),
                     border: OutlineInputBorder(),
                   ),
